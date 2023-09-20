@@ -2,6 +2,8 @@ import { useState } from "react";
 import BookCreate from "./components/BookCreate";
 import BookList from "./components/BookList";
 
+// {// dont forget to install json-server from npm }
+
 function App() {
   const [books, setBooks] = useState([]);
 
@@ -19,7 +21,7 @@ function App() {
     const updatedBooks = books.filter((book) => {
       return book.id !== id;
     });
-    setBooks(updatedBooks)
+    setBooks(updatedBooks);
   };
 
   const handleCreateBook = (title) => {
@@ -33,7 +35,7 @@ function App() {
   return (
     <div className="app">
       <h1>Reading List</h1>
-      <BookList onEdit={editBookById} books={books} onDelete={deleteBookById}/>
+      <BookList onEdit={editBookById} books={books} onDelete={deleteBookById} />
       <BookCreate onCreate={handleCreateBook} />
     </div>
   );
