@@ -1,10 +1,6 @@
 {
   "books": [
     {
-      "title": "book",
-      "id": 2
-    },
-    {
       "title": "noook",
       "id": 3
     },
