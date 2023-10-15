@@ -2,14 +2,12 @@ import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import BookContext from './context/ book'
-
-
+import { Provider } from "./context/book";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BookContext.Provider value={5}>
+    <Provider value={5}>
       <App />
-    </BookContext.Provider>
+    </Provider>
   </React.StrictMode>
 );
