@@ -4,9 +4,9 @@ import BookContext from "../context/book";
 
 function BookShow({ book }) {
   const [showEdit, setShowEdit] = useState(false);
-  const { deleteBookByid } = useContext(BookContext);
+  const { deleteBookById } = useContext(BookContext);
   const handleDeleteClick = () => {
-    deleteBookByid(book.id);
+    deleteBookById(book.id);
   };
 
   const handleEditClick = () => {
