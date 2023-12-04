@@ -37,6 +37,7 @@ const Provider = ({ children }) => {
   const handleCreateBook = async (title) => {
     const res = await axios.post("http://localhost:3001/books", {
       title,
+      // title: title,
     });
 
     const updatedBooks = [...books, res.data];

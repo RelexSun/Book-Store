@@ -13,6 +13,11 @@ function App() {
     fetchBooks();
   }, []);
 
+  // this will make endless request which is bad
+  // useEffect(() => {
+  //   fetchBooks();
+  // }, [fetchBooks]);
+
   // Don't do this: cuz it will request api over and over again
   // fetchBooks();
 
