@@ -11,14 +11,14 @@ function App() {
 
   useEffect(() => {
     fetchBooks();
-  }, []);
+  }, [fetchBooks]);
 
-  // this will make endless request which is bad
+  // TODO: this will make endless request which is bad
   // useEffect(() => {
   //   fetchBooks();
   // }, [fetchBooks]);
 
-  // Don't do this: cuz it will request api over and over again
+  // TODO: Don't do this: cuz it will request api over and over again
   // fetchBooks();
 
   return (
